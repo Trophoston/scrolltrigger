@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'kanit';
+    src: url('Kanit-SemiBold.ttf');
+}
+
+body,html{
+    overflow-x: hidden;
+    font-family: kanit;
+}
+
+p{
+    text-align: end;
+    font-size: 18vw;
+}
+
