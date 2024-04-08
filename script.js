@@ -18,38 +18,63 @@ let screenWidth = window.innerWidth;
 // });
 
 
-gsap.to(".h", {
+// gsap.to(".h", {
+//     scrollTrigger: {
+//         trigger: ".h",
+//         start: "center center",
+//         end: "+=200%",
+//         scrub: 1,
+//         markers: true,
+//         pin:true,       
+//     },
+//     x:-screenWidth,
+
+// });
+
+// gsap.to(".b", {
+//     scrollTrigger: {
+//         trigger: ".b",
+//         start: "center center",
+//         end: "+=200%",
+//         scrub: 1.3,
+//         // markers: true,
+//     },
+//     x:-screenWidth,
+
+// });
+
+// gsap.to(".d", {
+//     scrollTrigger: {
+//         trigger: ".d",
+//         start: "center center",
+//         end: "+=200%",
+//         scrub: 1.6,
+//     },
+//     x:-screenWidth,
+
+// });
+
+
+
+gsap.to(".img-holder", {
+    rotation: 0,
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    ease: "power2.inout",
     scrollTrigger: {
-        trigger: ".h",
-        start: "center 85%",
-        end: "bottom -20%",
+        start: "center center",
+        end: "+=200%",
         scrub: 1,
-        // markers: true,
-    },
-    x:-screenWidth,
-
+        snap: true,
+        pin:".img-holder",
+    }
 });
 
-gsap.to(".b", {
+gsap.to(".img-holder img", {
+    scale:1,
+    ease: "power2.inout",
     scrollTrigger: {
-        trigger: ".b",
-        start: "center 90%",
-        end: "bottom -20%",
-        scrub: 1.3,
-        // markers: true,
-    },
-    x:-screenWidth,
-
-});
-
-gsap.to(".d", {
-    scrollTrigger: {
-        trigger: ".d",
-        start: "center 95%",
-        end: "bottom -20%",
-        scrub: 1.6,
-        // markers: true,
-    },
-    x:-screenWidth,
-
+        start: "top top",
+        end: "+=200%",
+        scrub: 1,
+    }
 });
