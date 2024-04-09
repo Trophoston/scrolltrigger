@@ -78,6 +78,7 @@ body,html{
     object-fit: cover;
     position: absolute;
     right: -100%;
+    filter: drop-shadow(0 0 5px #6180c2);
 }
 
 
