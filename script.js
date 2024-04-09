@@ -82,7 +82,7 @@ gsap.to(".h", {
         end: "+=200%",
         scrub: 1,
         pin:".cus",
-        markers: true,
+        // markers: true,
     },
     color: "#DEE3F5",
     x:-screenWidth,
