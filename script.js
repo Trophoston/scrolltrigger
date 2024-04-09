@@ -4,6 +4,8 @@ console.log("Hello World");
 
 let screenWidth = window.innerWidth*2.1;
 
+
+
 gsap.to(".textopt",{
     scrollTrigger:{
         trigger:".textopt",
@@ -58,7 +60,7 @@ gsap.to(".img-holder", {
         end: "+=100%",
         scrub: 1,
         pin:".img-holder",
-        // snap: true,
+        snap: true,
         // markers:true,
     }
 });
@@ -82,7 +84,7 @@ gsap.to(".h", {
         pin:".cus",
         markers: true,
     },
-    color: "red",
+    color: "#DEE3F5",
     x:-screenWidth,
 
 });
@@ -90,13 +92,13 @@ gsap.to(".h", {
 gsap.to(".b", {
     scrollTrigger: {
         trigger: ".b",
-        start: "bottom 40%",
+        start: "bottom 35%",
         end: "+=200%",
         scrub: 1.3,
         // markers: true,
     },
     x:-screenWidth,
-    color: "orange",
+    color: "#D0D8F5",
 
 });
 
@@ -108,6 +110,6 @@ gsap.to(".d", {
         scrub: 1.6,
     },
     x:-screenWidth,
-    color: "yellow",
+    color: "#B4C8F5",
 
 });
