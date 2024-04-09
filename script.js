@@ -4,8 +4,6 @@ console.log("Hello World");
 
 let screenWidth = window.innerWidth*2.1;
 
-
-
 gsap.to(".textopt",{
     scrollTrigger:{
         trigger:".textopt",
@@ -55,14 +53,14 @@ gsap.to(".img-holder", {
     rotation: 0,
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     ease: "power2.inout",
-    scrollTrigger: {
+        scrollTrigger: {
         start: "center center",
         end: "+=100%",
         scrub: 1,
         pin:".img-holder",
         snap: true,
         // markers:true,
-    }
+    },
 });
 
 gsap.to(".img-holder img", {
@@ -112,4 +110,16 @@ gsap.to(".d", {
     x:-screenWidth,
     color: "#B4C8F5",
 
+});
+
+gsap.to(".cardttd img", {
+    scrollTrigger: {
+        trigger: ".cardttd img",
+        start: "bottom top",
+        end: "+=100%",
+        scrub: 1,
+        // markers: true,
+        snap: true,
+    },
+    left:"0px",
 });

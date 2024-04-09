@@ -62,7 +62,29 @@ body,html{
 .textopt p{
     font-size: 15vw;
     position: relative;
-    color: #DEE3F5;
+    color: #eaedf7;
     margin: 0;
     padding: 0;
+}
+
+.slide{
+    display: flex;
+    position: absolute;
+}
+
+.cardttd img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: -100%;
+}
+
+
+.cardttd{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
 }
