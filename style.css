@@ -3,28 +3,23 @@
     src: url('Kanit-SemiBold.ttf');
 }
 
+
+::-webkit-scrollbar{
+    display: none;
+}
+
 body,html{
     overflow-x: hidden;
     font-family: kanit;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
-
-/* p{
-    text-align: end;
-    font-size: 23vw;
-    color: white;
-}
-
-.pxs{
-    margin: -100%;
-} */
 
 .img-holder{
     position: relative;
     top: 0;
     width: 100%;
     height: 100vh;
-    clip-path: polygon(20% 20%, 80% 20%, 80% 80%, 20% 80%);
+    clip-path: polygon(30% 40%, 70% 40%, 70% 60%, 30% 60%);
     transform: rotate(30deg);
 }
 
@@ -34,4 +29,37 @@ body,html{
     object-fit: cover;
     position: relative;
     transform: scale(1.5);
+}
+
+.pxs{
+    position: relative;
+    right: -100%;
+    text-align: end;
+    font-size: 23vw;
+    color: white;
+}
+
+.textopt{
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    z-index: 100;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.textopt div{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.textopt p{
+    font-size: 15vw;
+    position: relative;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
 }
